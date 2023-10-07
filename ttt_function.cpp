@@ -1,8 +1,12 @@
 #include <iostream>
 
-void layoutFunction() {
-    char space[3][3] = {{'1','2','3'}, {'4','5','6'}, {'7','8','9'}};
+char space[3][3] = {{'1','2','3'}, {'4','5','6'}, {'7','8','9'}};
+int row;
+int column;
+char token = 'x';
+bool tie = false;
 
+void layoutFunction() {
     std::cout << "     |     |     \n";
     std::cout << "   " << space[0][0] << " |  " << space[0][1] << "  |  " << space[0][2] << "   \n";
     std::cout << "_____|_____|_____\n";
