@@ -10,7 +10,5 @@ int main() {
         winOrTie();
     }
 
-    if (token == 'x' && tie == false) {
-        
-    }
+    displayWinner();
 }

@@ -53,7 +53,7 @@ void positionFunction() {
         column = 1;
     } else if (digit == 3) {
         row = 0;
-        column = 3;
+        column = 2;
     } else if (digit == 4) {
         row = 1;
         column = 0;
@@ -93,12 +93,12 @@ void positionFunction() {
 
 bool winOrTie() {
     for (int i = 0; i < 3; i++) {
-        if (space[i][0] == sapce[i][1] && space[i][0] == space[i][2] || space[0][i] == sapce[1][i] && space[0][i] == space[2][i]) {
+        if (space[i][0] == space[i][1] && space[i][0] == space[i][2] || space[0][i] == space[1][i] && space[0][i] == space[2][i]) {
             return true;
         }
     }
 
-    if (space[0][0] == sapce[1][1] && space[1][1] == space[2][2] || space[0][2] == sapce[1][1] && space[1][1] == space[2][0]) {
+    if (space[0][0] == space[1][1] && space[1][1] == space[2][2] || space[0][2] == space[1][1] && space[1][1] == space[2][0]) {
         return true;
     }
 
@@ -113,4 +113,15 @@ bool winOrTie() {
     }
     tie = true;
     return false;
+
+}
+
+void displayWinner() {
+    if (token == 'x' && tie == false) {
+        std::cout << name2 << " Wins!!\n";
+    } else if (token == 'o' && tie == false) {
+        std::cout << name1 << " Wins!!\n";
+    } else {
+        std::cout << "Oh no! Its a tie!\n";
+    }
 }
