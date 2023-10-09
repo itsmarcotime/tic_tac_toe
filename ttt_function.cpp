@@ -35,15 +35,59 @@ void layoutFunction() {
 void positionFunction() {
     int digit;
 
-    switch(digit) {
-        case 1:
-            std::cout << "Hello! \n";
-            break;
-        case 2:
-            std::cout << "Goodbye! \n";
-            break;
-        default:
-            std::cout << "Invalid \n";
-            break;
+    if (token == 'x') {
+        std::cout << name1 << " please enter the number you want to mark.\n";
+        std::cin >> digit;
     }
+
+    if (token == 'o') {
+        std::cout << name2 << " please enter the number you want to mark.\n";
+        std::cin >> digit;
+    }
+
+    if (digit == 1) {
+        row = 0;
+        column = 0;
+    } else if (digit == 2) {
+        row = 0;
+        column = 1;
+    } else if (digit == 3) {
+        row = 0;
+        column = 3;
+    } else if (digit == 4) {
+        row = 1;
+        column = 0;
+    } else if (digit == 5) {
+        row = 1;
+        column = 1;
+    } else if (digit == 6) {
+        row = 1;
+        column = 2;
+    } else if (digit == 7) {
+        row = 2;
+        column = 0;
+    } else if (digit == 8) {
+        row = 2;
+        column = 1;
+    } else if (digit == 9) {
+        row = 2;
+        column = 2;
+    } else {
+        std::cout << "Invalid input!\n";
+    }
+}
+
+void gameFunction() {
+    if (token == 'x' && space[row][column] != 'x' && space[row][column] != 'o') {
+        space[row][column] = 'x';
+        token = 'o';
+    } else if (token == 'o' && space[row][column] != 'x' && space[row][column] != 'o') {
+        space[row][column] = 'o';
+        token = 'x';
+    } else {
+        std::cout << "There is no emty space!\n";
+        positionFunction();
+    }
+
+    layoutFunction();
 }
