@@ -1,2 +1,2 @@
-
 void layoutFunction();
+void getPlayerNames();
