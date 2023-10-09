@@ -3,5 +3,14 @@
 
 int main() {
     getPlayerNames();
-    gameFunction();
+    
+    while (!winOrTie()) {
+        layoutFunction();
+        positionFunction();
+        winOrTie();
+    }
+
+    if (token == 'x' && tie == false) {
+        
+    }
 }

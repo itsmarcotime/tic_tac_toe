@@ -75,9 +75,7 @@ void positionFunction() {
     } else {
         std::cout << "Invalid input!\n";
     }
-}
 
-void gameFunction() {
     if (token == 'x' && space[row][column] != 'x' && space[row][column] != 'o') {
         space[row][column] = 'x';
         token = 'o';
@@ -85,9 +83,34 @@ void gameFunction() {
         space[row][column] = 'o';
         token = 'x';
     } else {
-        std::cout << "There is no emty space!\n";
+        std::cout << "There is no empty space!\n";
         positionFunction();
     }
 
     layoutFunction();
+}
+
+
+bool winOrTie() {
+    for (int i = 0; i < 3; i++) {
+        if (space[i][0] == sapce[i][1] && space[i][0] == space[i][2] || space[0][i] == sapce[1][i] && space[0][i] == space[2][i]) {
+            return true;
+        }
+    }
+
+    if (space[0][0] == sapce[1][1] && space[1][1] == space[2][2] || space[0][2] == sapce[1][1] && space[1][1] == space[2][0]) {
+        return true;
+    }
+
+    // checking 3x3 matrix using double for loop if there are empty spaces return false because game is on going
+    // otherwise all spaces are full so tie becomes true and false is still returned as there is no winner.
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (space[i][j] != 'x' && space[i][j] != 'o') {
+                return false;
+            }
+        }
+    }
+    tie = true;
+    return false;
 }

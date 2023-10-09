@@ -1,3 +1,4 @@
 void layoutFunction();
 void getPlayerNames();
-void gameFunction();
+void positionFunction();
+bool winOrTie();
