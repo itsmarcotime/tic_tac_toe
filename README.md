@@ -13,12 +13,12 @@ created by Marco Mata
 Tick-Tack-Toe on your terminal! In order to play you will need to run the code on your local machine. 
 Once you have the code you will need to open the command line for Windows users or terminal for Mac users.
 
-first run: "g++ ttt.cpp ttt_function.cpp"
+first run: **"g++ ttt.cpp ttt_function.cpp"**
 
-& depending on the compiler you have you will then run the generated file.
-for example you will possible run: "./a.out" or "./a.exe"
+& depending on the compiler you have you will then run the generated file.<br />
+for example you will possible run: **"./a.out" or "./a.exe"**
 
-Hope you enjoy! :)
+**Hope you enjoy! :)**
 
 
 ## Built-with
@@ -31,10 +31,10 @@ Contact me if you would like to contribute!
 In order to play you will need to run the code on your local machine. 
 Once you have the code you will need to open the command line for Windows users or terminal for Mac users.
 
-first run: "g++ ttt.cpp ttt_function.cpp"
+first run: **"g++ ttt.cpp ttt_function.cpp"**
 
-& depending on the compiler you have you will then run the generated file.
-for example you will possible run: "./a.out" or "./a.exe"
+& depending on the compiler you have you will then run the generated file.<br />
+for example you will possible run: **"./a.out" or "./a.exe"**
 
 ## Questions
 Questions? <br /> 
