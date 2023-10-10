@@ -10,13 +10,12 @@ created by Marco Mata
 
 
 ## Description
-Tick-Tack-Toe on your terminal! In order to play you will need to run the code on your local machine. 
-Once you have the code you will need to open the command line for Windows users or terminal for Mac users.
+Tick-Tack-Toe on your terminal! In order to play you will need to run the code on your local machine, and have a C++ compiler set up locally as well. Once you have the code you will need to open the command line for Windows users or terminal for Mac users.
 
 first run: **"g++ ttt.cpp ttt_function.cpp"**
 
 & depending on the compiler you have you will then run the generated file.<br />
-for example you will possible run: **"./a.out" or "./a.exe"**
+for example you will possibly run: **"./a.out" or "./a.exe"**
 
 **Hope you enjoy! :)**
 
@@ -28,13 +27,13 @@ This version of the application was built using C++!
 Contact me if you would like to contribute!
 
 ## Usage
-In order to play you will need to run the code on your local machine. 
+In order to play you will need to run the code on your local machine, and have a C++ compiler set up locally as well.
 Once you have the code you will need to open the command line for Windows users or terminal for Mac users.
 
 first run: **"g++ ttt.cpp ttt_function.cpp"**
 
 & depending on the compiler you have you will then run the generated file.<br />
-for example you will possible run: **"./a.out" or "./a.exe"**
+for example you will possibly run: **"./a.out" or "./a.exe"**
 
 ## Questions
 Questions? <br /> 
