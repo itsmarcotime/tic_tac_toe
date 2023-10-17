@@ -1,4 +1,4 @@
-# Welcome to Tick-Tack-Toe in C++!
+# Welcome to Tic-Tac-Toe in C++!
 created by Marco Mata
 
 ## Table of Contents
@@ -10,7 +10,7 @@ created by Marco Mata
 
 
 ## Description
-Tick-Tack-Toe on your terminal! In order to play you will need to run the code on your local machine, and have a C++ compiler set up locally as well. Once you have the code you will need to open the command line for Windows users or terminal for Mac users.
+Tic-Tac-Toe on your terminal! In order to play you will need to run the code on your local machine, and have a C++ compiler set up locally as well. Once you have the code you will need to open the command line for Windows users or terminal for Mac users.
 
 first run: **"g++ ttt.cpp ttt_function.cpp"**
 
